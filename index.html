@@ -1,0 +1,360 @@
+<html>
+<head>
+<style>
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans:300,400);
+* {
+  margin: 0;
+  padding: 0;
+}
+html, body {
+  height: 100%;
+}
+section {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+section::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 80%;
+  background: -webkit-linear-gradient(top,rgba(0,0,0,0) 0,rgba(0,0,0,.8) 80%,rgba(0,0,0,.8) 100%);
+  background: linear-gradient(to bottom,rgba(0,0,0,0) 0,rgba(0,0,0,.8) 80%,rgba(0,0,0,.8) 100%);
+}
+section h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 2;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font : normal 300 64px/1 'Josefin Sans', sans-serif;
+  text-align: center;
+  white-space: nowrap;
+}
+section h3 {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  z-index: 2;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font : normal 300 44px/1 'Josefin Sans', sans-serif;
+  text-align: center;
+  white-space: nowrap;
+}
+section p {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  z-index: 2;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font : normal 300 22px/1 'Josefin Sans', sans-serif;
+  text-align: justify;
+  white-space: nowrap;
+}
+.datasetLink {
+position: absolute;
+  top: 80%;
+  left: 46% !important;
+  z-index: 2;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font : normal 300 25px/1 'Josefin Sans', sans-serif;
+  text-align: center;
+  white-space: nowrap;
+}
+section h2 {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  z-index: 2;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font : normal 300 50px/1 'Josefin Sans', sans-serif;
+  text-align: center;
+  white-space: nowrap;
+}
+.answers {
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  z-index: 2;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font : normal 300 20px/1 'Josefin Sans', sans-serif;
+  text-align: justify;
+  white-space: nowrap;
+}
+
+#section01 { background: url("images/nba2.jpg") center center / cover no-repeat;}
+#section02, #section06 { background: url("images/stadium.jpg") center center / cover no-repeat;}
+#section03 { background: url("images/nba1.jpg") center center / cover no-repeat;}
+#section04 { background: url("images/nba1.jpg") center center / cover no-repeat;}
+#section05 { background: url("images/nba1.jpg") center center / cover no-repeat;}
+
+
+#section03A, #section04A, #section05A, #summary { background-color:black;}
+
+.demo a {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  z-index: 2;
+  display: inline-block;
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  color: #fff;
+  font : normal 400 20px/1 'Josefin Sans', sans-serif;
+  letter-spacing: .1em;
+  text-decoration: none;
+  transition: opacity .3s;
+}
+.demo a:hover {
+  opacity: .5;
+}
+
+
+
+#section01 a {
+  padding-top: 60px;
+}
+#section01 a span {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 24px;
+  height: 24px;
+  margin-left: -12px;
+  border-left: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  box-sizing: border-box;
+}
+
+
+
+#section02 a, #section06 a, #summary a {
+  padding-top: 60px;
+}
+#section02 a span, #section06 a span, #summary a span {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 46px;
+  height: 46px;
+  margin-left: -23px;
+  border: 1px solid #fff;
+  border-radius: 100%;
+  box-sizing: border-box;
+}
+#section02 a span::after, #section06 a span::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  content: '';
+  width: 16px;
+  height: 16px;
+  margin: -12px 0 0 -8px;
+  border-left: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  -webkit-transform: rotateY(180deg) rotate(-45deg);
+  transform: rotateY(180deg) rotate(-45deg);
+  box-sizing: border-box;
+}
+
+#summary a span::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  content: '';
+  width: 16px;
+  height: 16px;
+  margin: -12px 0 0 -8px;
+  border-left: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  -webkit-transform: rotate(-225deg);
+  transform: rotate(-225deg);
+  box-sizing: border-box;
+}
+
+#section03 a, #section04 a, #section05 a, #section03a a, #section04a a, #section05a a {
+  padding-top: 60px;
+}
+#section03 a span, #section04 a span, #section05 a span, #section03a a span, #section04a a span, #section05a a span {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 46px;
+  height: 46px;
+  margin-left: -23px;
+  border: 1px solid #fff;
+  border-radius: 100%;
+  box-sizing: border-box;
+}
+#section03 a span::after, #section04 a span::after, #section05 a span::after, #section03a a span::after, #section04a a span::after, #section05a a span::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  content: '';
+  width: 16px;
+  height: 16px;
+  margin: -12px 0 0 -8px;
+  border-left: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  box-sizing: border-box;
+}
+#section03 a span::before, #section04 a span::before, #section05 a span::before,#section03a a span::before, #section04a a span::before, #section05a a span::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  content: '';
+  width: 44px;
+  height: 44px;
+  box-shadow: 0 0 0 0 rgba(255,255,255,.1);
+  border-radius: 100%;
+  opacity: 0;
+  -webkit-animation: sdb03 3s infinite;
+  animation: sdb03 3s infinite;
+  box-sizing: border-box;
+}
+@-webkit-keyframes sdb03 {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  60% {
+    box-shadow: 0 0 0 60px rgba(255,255,255,.1);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes sdb03 {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  60% {
+    box-shadow: 0 0 0 60px rgba(255,255,255,.1);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+</style>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js">
+$(function() {
+  $('a[href*=#]').on('click', function(e) {
+    e.preventDefault();
+    $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
+  });
+});
+</script>
+</head>
+<body>
+	<section id="section01" class="demo">
+	  <h1>Modern Era in Basketball<br> Rise of the defensive game</h1>
+	  <h3>Analysis and Visualizations by Venkatesan Murali</h3>
+	  <a class="datasetLink" target="_blank" href ="https://www.kaggle.com/drgilermo/nba-players-stats"> Dataset Link </a>
+	  <a href="#section02"><span></span></a>
+	</section>
+	<section id="section02" class="demo">
+	  <h2>Introduction</h2>
+	  <p>Simply put, I love basketball and I am a big fan of the Golden State Warriors in the NBA (National Basketball Association).<br>
+         Given my love for NBA, I stumbled upon this dataset. I knew the game of basketball had evolved over the years but I never <br>
+		 did formal analysis with the data. This dataset had data collected over the last 60 years and it gave me an opportunity to extract <br>
+		 useful information out of the data. Let us go through a story which helps us understand the evolution of the NBA through some charts.<br>
+       </p>
+	   
+	  <a href="#section03"><span></span></a>
+	</section>
+	<section id="section03" class="demo">
+	  <h1>Question #1</h1>
+	  <p> What is the impact of blocking? </p>
+	  <a href="#section03A"><span></span></a>
+	</section>
+	<section id="section03A" class="demo">
+		<br><br>
+	  <center><img src="charts/avgBlocks.png" alt="Average Blocks" width = "1000px" height="450px"/></center>
+	  <p class="answers">In basketball, a block or blocked shot occurs when a player legally deflects a field goal attempt from an opponent player to prevent a score.<br>
+Blocking is the basic form of defending in basketball. Looking at the line chart, we can clearly see that blocking has improved over the years.<br>
+People are more focused on blocking now which makes it difficult for offensive players to score baskets. This chart is a starting point in our analysis to <br>	
+prove that defensive game has evolved over the years. </p>
+	  <a href="#section04"><span></span></a>
+	</section>
+	<section id="section04" class="demo">
+	  <h1>Question #2</h1>
+	  <p> How has blocking influenced the strategies of offensive players? </p>
+	  <a href="#section04A"><span></span></a>
+	</section>
+	<section id="section04A" class="demo"><br>
+	  <center><img src="charts/2p3pCharts.png" alt="Average Blocks" width = "800px" height="450px"/></center> 
+		<p class="answers"> 
+		Based on the previous chart, we came to know that blocking has increased over the years. When the defense evolves, it is inevitable that  the offense evolves as well. <br>
+		If we look at the area chart, we can see that the 2 pointers scored per season hasn't changed much and it is more or less similar to how it was previously. <br>
+		But, the 3 pointers scored per season has been gradually increasing over the years. Let us explain 2 pointers and 3 pointers first. <br>
+		If a player makes a field goal from within the three-point line, the player scores two points. 
+		If the player makes a field goal from beyond the three-point line, <br> the player scores three points. 
+		Since blocking is predominantly done inside the three-point line, the offensive players have begun attempting and scoring more 3-pointers. <br>
+		This again justifies that the NBA is becoming more defensive which led to more 3-pointers being scored. 
+       </p>
+	  <a href="#section05"><span></span></a>
+	</section>
+	<section id="section05" class="demo">
+	  <h1>Question #3</h1>
+	  <p> Is defense just the work of a defender in a team? </p>
+	  <a href="#section05A"><span></span></a>
+	</section>
+	<section id="section05A" class="demo"> <br>
+	  <center><img src="charts/Rebounds.png" alt="Average Blocks" width = "1000px" height="450px"/></center>
+	  <p class="answers"> 
+		The last chart explains defense of an offensive player. Rebounds are another crucial element of defense in basketball. In basketball, a rebound, <br>
+		colloquially referred to as a board, is a statistic awarded to a player who retrieves the ball after a missed field goal or free throw. <br>
+		Rebounds are also given to a player who tips in a missed shot on his team's offensive end. The idea of the bar chart is to calculate how much <br> 
+		rebounds can an offensive player make. The bar chart shows a trend which explains rebounds are increasing over the years. It depicts the fact that offensive players <br>
+		are now contributing to defense a lot. Defense is not just the work of defenders anymore. Everyone has to defend together as a team. <br>
+		This chart again proves a fact that defense has indeed evolved over the years and teams are rebuilding strategies to win games using defense as their weapon.
+       </p>
+	  <a href="#section06"><span></span></a>
+	</section>
+	<section id="section06" class="demo">
+	  <h2>How did I choose the charts for answering the questions?</h2>
+	  <p>Line chart has been used to answer Question 1 because line charts are really expressive when it comes to tracking time series data over longer period of time. <br><br>
+         Stacked area chart has been used to answer Question 2. Area charts are best used when we communicate the overall trend as opposed to individual values. <br>
+         Also stacked area charts are best used to visualize part-to-whole relationships, helping us understand how each categories has contributed to the overall total.<br><br>
+         Bar chart has been used to answer Question 3. Bar charts showing variations in data over time and it can be used to express trends in time series data. <br>
+         The darker the color, the better the rebounds. The lighter the color, the lesser the rebounds. Over the years, we can see that color is slowly becoming darker.<br>
+       </p>
+	   
+	  <a href="#summary"><span></span></a>
+	</section>
+	<section id="summary" class="demo">
+	  <h2>Summary</h2>
+	  <p>Based on our analysis and visualization, we can conclude that, the NBA has become more defensive over the years and even  <br>
+         offensive players are contributing to defense nowadays. In short - <b>Offense wins you games, defense wins you championships</b>.<br>
+       </p>
+	  <a href="#section01"><span></span></a>
+	</section>
+</body>
+</html>
